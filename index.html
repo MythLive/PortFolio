@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinjoy Das's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fbd4fe3a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Video Editior , Product Description Writer , Web Developer.</p>
+            <h1>Hi, I'm Srinjoy from<br>Kolkata, West Bengal</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ____________________________About_________________________ -->
+
+<div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I am Srinjoy Das a student of Institute of engineering And Management. Have a decent skill level in Python , Html , CSS , Web Designing and looking for internship oppurtunities based on skill level.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Language')">Languages</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Language">
+                        <ul>
+                            <li><span>Bengali</span><br>Native Language</li>
+                            <li><span>English</span><br>Have Good command In This language </li>
+                            <li><span>Hindi</span><br>Have A Good Command In This language<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Higher Secondary Education</span><br>Springdale High School</li>
+                            <li><span>B.Tech</span><br>Institution of Engineering And Management</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Games</span><br>Likes to Play FPS Games And Story Games</li>
+                            <li><span>Music</span><br>Likes English Rock Songs , Raps , EDMs</li>
+                            <li><span>Content Creator</span><br>Have a Small Youtube Channel For Streaming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ______________________________________________Skills_____________________________________ -->
+
+<div class="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Web Developer</h2>
+                <p>Front-end Web Developer</p>
+                <a href="https://www.google.com/search?q=web+developer&rlz=1C1RXQR_enIN1078IN1078&oq=web+developer&gs_lcrp=EgZjaHJvbWUyDggAEEUYORhDGLEDGIoFMgkIARAAGEMYigUyBwgCEAAYgAQyDQgDEAAYsQMYyQMYgAQyCggEEAAYkgMYigUyCQgFEAAYQxiKBTIHCAYQABiABDIGCAcQRRg80gEINDg0N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Video Editor</h2>
+                <p>Can Edit Videos In Softwares Like <br>Filmora , Adobe After Effects</p>
+                <a href="https://www.youtube.com/channel/UCrQLMpHP9eZTr9FoIaMkzgA"> Link To My Channel </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-photo-film"></i>
+                <h2>Photo Editor</h2>
+                <p>Can Edit Photos , Make Thumbnails <br> In Adobe Photoshop</p>
+                <a href="https://www.google.com/search?q=what+is+a+photo+editor+persob&sca_esv=571739304&rlz=1C1RXQR_enIN1078IN1078&biw=1398&bih=653&sxsrf=AM9HkKkBy9PqTgPbBUxZ7InMPQ0GFCE8Wg%3A1696783097301&ei=-doiZeyBEsfi4-EPn-qH0Ac&ved=0ahUKEwis4pnO8eaBAxVH8TgGHR_1AXoQ4dUDCBA&uact=5&oq=what+is+a+photo+editor+persob&gs_lp=Egxnd3Mtd2l6LXNlcnAiHXdoYXQgaXMgYSBwaG90byBlZGl0b3IgcGVyc29iMgcQIRigARgKMgcQIRigARgKMgcQIRigARgKMgcQIRigARgKMggQIRgWGB4YHTIIECEYFhgeGB0yCBAhGBYYHhgdMggQIRgWGB4YHTIIECEYFhgeGB1IpjZQAFjFNXAEeAGQAQGYAbUCoAGMK6oBCDAuMjMuNi4xuAEDyAEA-AEBwgIHECMYigUYJ8ICDhAAGIoFGLEDGIMBGJECwgIUEC4YigUYsQMYgwEYxwEY0QMYkQLCAgUQABiABMICCxAAGIoFGLEDGIMBwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICBBAjGCfCAggQABiKBRiRAsICEBAAGIAEGBQYhwIYsQMYgwHCAg0QABiABBgUGIcCGLEDwgIIEAAYigUYsQPCAgoQABiABBgUGIcCwgIHEAAYgAQYCsICBhAAGBYYHsICCBAAGBYYHhgKwgIIEAAYCBgeGA3CAggQABiKBRiGA8ICBRAhGKABwgIEECEYFcICChAhGBYYHhgPGB3iAwQYACBBiAYB&sclient=gws-wiz-serp">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Knows A Bit Of Python</p>
+                <a href="https://github.com/MythLive/Coding-Projects">Link Of My Github Repository</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <h2>Product Description Writer</h2>
+                <p>Knows How To Write Perfect Eye Catching Description About Your Products</p>
+                <a href="https://www.google.com/search?q=product+description+writer+means&sca_esv=571739304&rlz=1C1RXQR_enIN1078IN1078&sxsrf=AM9HkKldhIYYTJr2on7q6KNKpUEKABL_SA%3A1696783196668&ei=XNsiZayxKI2Z4-EPnc-5wAI&ved=0ahUKEwisz8r98eaBAxWNzDgGHZ1nDigQ4dUDCBA&uact=5&oq=product+description+writer+means&gs_lp=Egxnd3Mtd2l6LXNlcnAiIHByb2R1Y3QgZGVzY3JpcHRpb24gd3JpdGVyIG1lYW5zMgUQIRigATIFECEYoAFI0QxQwgNYsAtwAHgCkAEAmAGRAqAB6AeqAQUwLjMuMrgBA8gBAPgBAcICBBAAGEfCAgUQABiABMICCBAAGIoFGIYDwgIIECEYFhgeGB3iAwQYACBBiAYBkAYI&sclient=gws-wiz-serp">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- ________________________________________projects_____________________________________ -->
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project_list">
+            <div class="project">
+                <img src="images/clock.PNG">
+                <div class="layer">
+                    <h3>RGB Clock</h3>
+                    <p>A Regular Clock With RGB Borders</p>
+                    <a href="https://github.com/MythLive/Coding-Projects/tree/main/RGB%20Clock"><i class="fa-solid fa-link"></i> Click To Visit The Project </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/video.PNG">
+                <div class="layer">
+                    <h3>Video To Gif Converter</h3>
+                    <p>Converts A Video File Into GIF File</p>
+                    <a href="https://github.com/MythLive/Coding-Projects/blob/main/Video%20To%20GIF%20Converter"><i class="fa-solid fa-link"></i> Click To Visit The Project </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/weather.PNG">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>Tells The Details Of A Certain Weather</p>
+                    <a href="https://github.com/MythLive/Coding-Projects/blob/main/Weather%20App"><i class="fa-solid fa-link"></i> Click To Visit The Project </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/digiclock.PNG">
+                <div class="layer">
+                    <h3>Digital Clock</h3>
+                    <p>Just A Digital Clock</p>
+                    <a href="https://github.com/MythLive/Coding-Projects/blob/main/Digital%20Clock"><i class="fa-solid fa-link"></i> Click To Visit The Project </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://github.com/MythLive/Coding-Projects" class="btn">See More Projects</a>
+    </div>
+</div>
+
+<!-- _________________________________contact_____________________ -->
+
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> Email - dsrinjoy58@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i> Whatsapp - 7003947428</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/myth_live/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/srinioy-das-050b49234/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="http://api.whatsapp.com/send?phone=917003947428"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV/Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+                
+        </div>
+    </div>
+    <div class="copyright">
+        <p>COPYRIGHT <i class="fa-regular fa-copyright"></i> SRINJOY DAS 2023 .</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+
+<script>
+    var sidemenu = document .getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+        
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwLMUEqFbMOhITFfYa502psqeuSRAvfbGOajybb8fWFM40Nq5glqcE-p8Ie845iP2_X/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
